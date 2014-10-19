@@ -1,6 +1,7 @@
 // Place all the styles related to the hacknyf2014 controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@import "foundation";
 
 #header {
   @extend .row;
@@ -14,13 +15,33 @@ h1 {
 
 
 #search {
-  top: 100px;
-  
-  @extend .row; 
-  
+  margin-top: 100px;
+  @extend .row;
+  @extend .collapse;
+  @extend .prefix-radius; 
+    
   input {
     @extend .columns;
-    @extend .small-12;
+    @extend .small-11;
+    height: 100%;
   }
+  
+  
+  
+  div {
+    display: block;
+    @extend .columns;
+    @extend .small-1;
+    
+    
+    a {
+
+      @extend .button;
+      @extend .prefix;
+    }
+  }
+
 }
+
+
 
